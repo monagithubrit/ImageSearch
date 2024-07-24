@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#main {
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/06/17/05/vegetable-2924245_640.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+#btn-links {
+    display: flex;
+}
+
+#btn-links div {
+    margin-left: 1.8rem;
+}
+
+#btn-links div button {
+    padding: .7rem 1.2rem;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+
+
+}
+
+.explore-btn button {
+    background: none;
+    border: none;
+}
+
+.login-btn button {
+    background: none;
+    border: none;
+}
+
+.join-btn button {
+    background-color: hsla(0, 0%, 100%, .1);
+    border: 1px solid whitesmoke;
+}
+
+.upload-btn button {
+    background-color: #00ab6b;
+    cursor: pointer;
+    border: none;
+}
+
+.logo a {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+#search-content {
+    color: #fff;
+    width: auto;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 3.5rem 0;
+}
+
+#search-content p {
+    padding-top: .8rem;
+    font-size: 1.1rem;
+    letter-spacing: 2;
+}
+
+#search-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+    max-width: 700px;
+}
+
+
+#search-input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border: 5px;
+    font-size: 18px;
+    color: #333;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#search-input:focus {
+    border: none;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #00ab6b;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+}
+
+#main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+#main-footer p {
+    color: #fff;
+    font-size: .7rem;
+}
+
+#main-footer span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.search-results .images {
+    columns: 5 340px;
+    max-width: 95%;
+    gap: 15px;
+}
+
+.search-results .search-result {
+    margin-bottom: 1rem;
+}
+
+.search-result img {
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+#show-more-button {
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* =====================RESPONSIVE====================== */
+@media screen and (max-width:945px) {
+    #search-content p {
+        padding-top: .8rem;
+        font-size: .9rem;
+    }
+
+    #search-content h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:888px) {
+    .search-results .images {
+        columns: 5 200px;
+    }
+}
+
+@media screen and (max-width:781px) {
+    .explore-btn button {
+        display: none;
+    }
+
+    .join-btn button {
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:457px) {
+    .login-btn button {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 1.8rem;
+    }
+
+    #search-content h1 {
+        font-size: 1.4rem;
+    }
+
+    #search-content p {
+        font-size: .7rem;
+    }
+
+    #main-footer p {
+        font-size: .4rem;
+    }
+
+    #search-content form {
+        margin-top: 30px;
+    }
+    .search-results .images {
+        columns: 5 150px;
+    }
+    #main {
+        background-image: url("https://cdn.pixabay.com/photo/2018/04/13/23/55/strawberry-3317983_640.jpg");
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:768px) {
+    .search-results {
+        padding: 20px;
+    }
+
+    .search-result {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .search-result {
+        width: 48%;
+    }
+
+    #search-input {
+        width: 75%;
+    }
+} */
